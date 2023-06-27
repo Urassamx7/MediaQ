@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/*Media Queries*/
+
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+       
+    }
+    body{
+        background-image: url(../imagens/back-print.jpg);
+
+        
+    }
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+    main h1{ 
+        
+        text-shadow: none;
+        color: black;
+    }
+    img#mobile{display: none;}
+        img#tablet{display: none;}
+        img#print{display:block;}
+        img#desk{display:none;}
+        img#tv{display: none;}
+    main::after{
+        content: '$$$$Exercício feito por Urassamx7 para github.com/Urassamx7$$$$' ;
+        text-align: right;
+        text-decoration: overline;
+    }
+
+}
+  /*Tablets*/
+@media only screen and (min-width: 768px) and (max-width:992px){
+       
+         body{
+                     background-image: url(../imagens/back-tablet.jpg);
+                      }
+
+        img#mobile{display: none;}
+        img#tablet{display: block;}
+        img#print{display: none;}
+        img#desk{display: none;}
+        img#tv{display: none;}
+        
+}
+
+    /*Desktops*/
+@media only screen and (min-width: 992px) and (max-width:1200px){
+
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+         }
+
+        img#mobile{display: none;}
+        img#tablet{display: none;}
+        img#print{display:none;}
+        img#desk{display:block;}
+        img#tv{display: none;}
+}
+  /*Tvs*/
+@media only screen and (min-width: 1201px){
+  
+    body{
+        background-image: url(../imagens/back-tv.jpg);}
+
+        img#mobile{display: none;}
+        img#tablet{display: none;}
+        img#print{display:none;}
+        img#desk{display:none;}
+        img#tv{display: block;}
+        main{
+            width: 700px;
+        }
+}
