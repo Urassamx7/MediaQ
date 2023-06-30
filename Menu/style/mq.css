@@ -20,3 +20,26 @@
             
         }
 }
+@media print{
+    h1{
+        display: none;
+    }
+    menu{
+        display: none;
+
+    }
+    span#burger{
+        display: none;
+         }
+         menu li{
+            display: inline-block;
+         }
+         main{
+            width: 90vw;
+         }
+        menu > ul >li >a:hover{
+            background-color: gray;
+            transition: 0.4s;
+            
+        }
+}
