@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Login</title>
+    <link rel="shortcut icon" href="./img/vscode-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/mobilefirst.css">
+    <link rel="stylesheet" href="style/mediaqueries.css">
 </head>
 <body>
+    <section id="login">
+        <div id="img">
+        </div>
+        <div id="form">
+            <h1>Entrar</h1>
+            <p>Seja bem vindo(a), Faça o login para ter acesso as Configurações!!</p>
+
+
+
+
+
+            <form action="cadastro.php" method="post">
+                <div id="campo">
+                    <label for="user">Email: </label>
+                    <input class="log" type="email" id="user" name="user" minlength="5" maxlength="30" required placeholder="Email do usuário" size="11" autocomplete="username">
+                </div>
+                <br>
+                
+                <div id="campo">
+                    <label for="pass">Password:</label>
+                    <input class="log" type="password" id="pass" name="pass" minlength="8" maxlength="14" required placeholder="Senha" size="8"> <br>
+                </div>
+                <input type="submit" value="Entrar">
+            </form>
+            
+            
+
+        </div>
+    </section>
     
 </body>
 </html>
