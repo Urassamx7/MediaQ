@@ -2,8 +2,10 @@
 
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
+    /*TABLET*/
     section#login{
         width: 80vw;
+        height: 280px;
     }
     section#login > div#img{
         float: left;
@@ -18,11 +20,15 @@
     body{
         background-image: linear-gradient(to top, #49a09d, #5f3c82);
     }
+    
+
 }
 
 @media only screen and (min-width: 992px) {
+    /*BIG SCREEN*/
     section#login{
         width: 990px;
+        height:350px ;
     }
     section#login > div#img{
         float: right;
@@ -34,8 +40,8 @@
         width: 50%;
         height: 100%;
     }
-    body{
+    body{   
         background-image: linear-gradient(to top, #49a09d, #5f3c82);
     }
-
+  
 }
