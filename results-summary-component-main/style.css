@@ -32,6 +32,7 @@ html,body{
     width: 100vw;
     height: 100vh;
 }
+/*Result Component Division*/
 main.container{
     display: flex;
     flex-direction: column;
@@ -39,13 +40,13 @@ main.container{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 100vw;
+    width: 50vw;
     height: 100vh;
     border: 1px solid black;
     }
 div#result{
 background-image: linear-gradient(to top, var(--Lightroyalblue), var(--Lightslateblue));
-border-radius: 0px 0px 10px 10px;
+border-radius: 0px 0px 30px 30px;
 padding: 15px;
 color: white;
 }
@@ -85,4 +86,36 @@ h1{
     font-size: 1.1em;
     text-align: center;
     padding-bottom: 10px ;
+}
+/*Summary Division*/
+div#sum{
+    padding: 10px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+}
+div#sum > div{
+    display: flex;
+    justify-content: space-between;
+    border: 0.5px solid rgba(122, 115, 115, 0.123);
+    padding: 2px;
+    border-radius: 10px;
+}
+span#note{
+    font-size: medium;
+}
+span.size{
+    font-size: medium;
+}
+
+button{
+    border-radius: 20px;
+    width: 45vw;
+    height: 40px;
+    color: white;
+    background-color:rgb(33, 33, 97);
+}
+button:hover{
+    background-color: black;
 }
