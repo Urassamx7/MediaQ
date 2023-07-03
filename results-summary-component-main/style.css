@@ -49,6 +49,7 @@ background-image: linear-gradient(to top, var(--Lightroyalblue), var(--Lightslat
 border-radius: 0px 0px 30px 30px;
 padding: 15px;
 color: white;
+height: 50vh;
 }
 p.data{
     display: flex;
@@ -59,7 +60,7 @@ p.data{
     text-align: center;
     width: 7rem;
     border-radius: 50%;
-    background: var(--Violetblue);
+    background-image: linear-gradient(to top, var(--Lightslateblue),var(--Violetblue));
     aspect-ratio: 1 / 1;
     color: rgb(150, 143, 143);
 }
@@ -95,7 +96,7 @@ div#sum{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-   
+    height: 50vh;
   
 }
 
@@ -109,7 +110,11 @@ div#sum > div{
     border-radius: 10px;
     background-color: aqua;
     width: 90vw;
-    height: 100vh;
+    
+   
+}
+div#sum  span{
+    height: 40px;
 }
 
 span#note{
@@ -120,8 +125,9 @@ span.size{
 }
 
 button{
+    text-align: center;
     border-radius: 20px;
-    width: 45vw;
+    width: 90vw;
     height: 40px;
     color: white;
     background-color:rgb(33, 33, 97);
