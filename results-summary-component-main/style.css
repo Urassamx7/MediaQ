@@ -39,7 +39,7 @@ main.container{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
     border: 1px solid black;
     }
