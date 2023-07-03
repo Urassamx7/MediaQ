@@ -40,7 +40,7 @@ main.container{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
     border: 1px solid black;
     }
@@ -89,19 +89,29 @@ h1{
 }
 /*Summary Division*/
 div#sum{
-    padding: 10px;
-    padding-left: 15px;
+    padding: 1rem;
+    padding-left: 1.5rem;
     display: flex;
     flex-direction: column;
-   justify-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+   
+  
 }
+
 div#sum > div{
     display: flex;
     justify-content: space-between;
     border: 0.5px solid rgba(122, 115, 115, 0.123);
-    padding: 2px;
+    padding-top:  5px;
+    padding-left:  5px;
+    padding-right:  5px;
     border-radius: 10px;
+    background-color: aqua;
+    width: 90vw;
+    height: 100vh;
 }
+
 span#note{
     font-size: medium;
 }
