@@ -42,14 +42,19 @@ main.container{
     transform: translate(-50%,-50%);
     width: 100vw;
     height: 100vh;
-    border: 1px solid black;
-    }
+}
 div#result{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 background-image: linear-gradient(to top, var(--Lightroyalblue), var(--Lightslateblue));
 border-radius: 0px 0px 30px 30px;
 padding: 15px;
+padding-top: 30px;
+margin: auto;
 color: white;
 height: 50vh;
+width: 100vw;
 }
 p.data{
     display: flex;
@@ -59,6 +64,7 @@ p.data{
     margin-inline: auto ;
     text-align: center;
     width: 7rem;
+   
     border-radius: 50%;
     background-image: linear-gradient(to top, var(--Lightslateblue),var(--Violetblue));
     aspect-ratio: 1 / 1;
@@ -80,13 +86,17 @@ div.fin{
     padding:5px 5px;
 }
 div.fin > p{
-    padding: 3px;
+    padding: 10px;
+    font-size: larger;
+    padding-top: 25px;
 }
+
+
 
 h1{
     font-size: 1.1em;
     text-align: center;
-    padding-bottom: 10px ;
+    padding-bottom: 30px ;
 }
 /*Summary Division*/
 div#sum{
