@@ -34,7 +34,7 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    
     background-color: var(--branco);
     overflow: hidden;
 
@@ -42,8 +42,10 @@ section#login{
     width: 250px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px  rgba(0,0,0,0.450);
+    transform: translate(-50%,-50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    
 }
 section#login > div#img{
     display: block;
@@ -141,10 +143,11 @@ form a.button:hover{
 form > div#campo{
 background-color: var(--lilas);
 display: block;
-width: 100%;
+width: 90%;
 height: 40px;
 border-radius: 8px;
 margin: 5px 0px ;
+padding-left: 10px;
 }
 
 form label{

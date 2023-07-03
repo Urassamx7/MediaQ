@@ -1,0 +1,88 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'HankedGrotesk';
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+}
+:root{
+    /*Gradients Background*/
+    --Lightslateblue: hsl(252, 100%, 67%);
+    --Lightroyalblue: hsl(241, 81%, 54%);
+    /*Circle*/
+    --Violetblue: hsla(256, 72%, 46%, 1);
+    --Persianblue: hsla(241, 72%, 46%, 0);
+    /*SVG*/
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+}
+body{
+    font-family: 'HankedGrotesk', sans-serif;
+    font-weight: 700;
+    font-size: small;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+main.container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 50vw;
+    height: 100vh;
+    border: 1px solid black;
+    }
+div#result{
+background-image: linear-gradient(to top, var(--Lightroyalblue), var(--Lightslateblue));
+border-radius: 0px 0px 10px 10px;
+padding: 15px;
+color: white;
+}
+p.data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto ;
+    text-align: center;
+    width: 7rem;
+    border-radius: 50%;
+    background: var(--Violetblue);
+    aspect-ratio: 1 / 1;
+    color: rgb(150, 143, 143);
+}
+
+span.data{
+    display: block;
+    font-size:40px;
+    font-weight: 900;
+    line-height: 1;
+    color: white;
+    
+}
+div.fin{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding:5px 5px;
+}
+div.fin > p{
+    padding: 3px;
+}
+
+h1{
+    font-size: 1.1em;
+    text-align: center;
+    padding-bottom: 10px ;
+}
