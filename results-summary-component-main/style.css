@@ -42,6 +42,7 @@ main.container{
     transform: translate(-50%,-50%);
     width: 100vw;
     height: 100vh;
+    box-shadow: 3px 2px 0px 0px rgba(0, 0, 0, 0.164);
 }
 div#result{
     display: flex;
@@ -63,8 +64,9 @@ p.data{
     justify-content: center;
     margin-inline: auto ;
     text-align: center;
-    width: 7rem;
-   
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 8rem;
     border-radius: 50%;
     background-image: linear-gradient(to top, var(--Lightslateblue),var(--Violetblue));
     aspect-ratio: 1 / 1;
@@ -86,9 +88,9 @@ div.fin{
     padding:5px 5px;
 }
 div.fin > p{
-    padding: 10px;
+    padding: 5px;
     font-size: larger;
-    padding-top: 25px;
+    
 }
 
 
@@ -96,12 +98,12 @@ div.fin > p{
 h1{
     font-size: 1.1em;
     text-align: center;
-    padding-bottom: 30px ;
+    padding-top: 12ppx ;
 }
 /*Summary Division*/
 div#sum{
     padding: 1rem;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -118,7 +120,7 @@ div#sum > div{
     padding-left:  5px;
     padding-right:  5px;
     border-radius: 10px;
-    background-color: aqua;
+    background-color: rgba(215, 223, 223, 0.288);
     width: 90vw;
     
    
@@ -145,3 +147,19 @@ button{
 button:hover{
     background-color: black;
 }
+div#sum img{
+    height: 15px;
+}
+
+div#react > span.size{
+   color:rgba(226, 53, 53, 0.884);
+}
+div#mem > span.size{
+    color:rgb(226, 194, 53);
+ }
+ div#verb > span.size{
+    color:rgb(53, 226, 168);
+ }
+ div#visu > span.size{
+    color:rgb(53, 70, 226);
+ }

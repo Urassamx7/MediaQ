@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*Desktop*/
+
+@media only screen and (width: 1440px){
+    main.container{
+        display: flex;
+        flex-direction: row;
+        width: 50vw;
+        height: 30vh;
+    
+        border-radius: 30px;
+
+    } 
+    div#sum{
+        width: 30vw;
+        height: 30vh;
+    }
+    div#result{
+        width: 30vw;
+        height: 30vh;
+        border-radius: 30px;
+    }
+    div#sum > div{
+        width: 25vw;
+        margin:0;
+    }
+    h1{
+        font-size: 1.3em;
+        text-align: center;
+        padding-top: 14ppx ;
+    }
+    
+    div.fin > p{
+        padding-top: 2px;
+        font-size: larger;
+        
+    }
+
+}
