@@ -53,6 +53,11 @@ body{
 	padding-bottom: 1rem;
 	color: blue;
 }
+.panel ul{
+	margin-right: 20px;
+	margin-left: 30px;
+}
+
 .panel h2{
 	font-family: inherit, Times, serif;
 	line-height: 3rem;
@@ -104,8 +109,8 @@ body{
 	display: flex;
 	flex-direction: column;
 }
-.third ul{
-	border-bottom: 1px solid rgba(54, 54, 105, 0.562) ;
+.third ul, .second ul{
+	border-bottom: 1px solid rgba(81, 81, 185, 0.562) ;
 }
 .second a{
 	color: white;
