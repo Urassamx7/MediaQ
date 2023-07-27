@@ -1,52 +1,51 @@
-const formulario = document.getElementsById('form')
-const fname = document.getElementById('fname')
-const lname = document.getElementById('flname')
-const email = document.getElementById('ema')
-const pass = document.getElementById('pass')
+const tname = document.getElementById('fname');
+const lname = document.getElementById('flname');
+const email = document.getElementById('ema');
+const pass = document.getElementById('pass');
+const forma = document.getElementById('form');
 
-
-formulario.addEventListener('button', event => {
-    event.preventDefault()
-    var firstname = fname.value.trim()
-    var lastname = lname.value.trim()
-    var emailvalue = email.value.trim()
-    var passw = pass.value.trim()
-    var pattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+forma.addEventListener('click', (event)=>{
+    event.preventDefault();
+    var firstname = tname.value.trim();
+    var lastname = lname.value.trim();
+    var emailvalue = email.value.trim();
+    var passw = pass.value.trim();
+    var pattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     if(firstname === ''){
-        errorFunc(fname,'First Name cannot be empty')
+        errorFunc(tname,'First Name cannot be empty');
     }else{
-        successFunc(fname)
+        successFunc(tname);
     }
 
     if(lastname === ''){
-        errorFunc(lname,'Last Name cannot be empty')
+        errorFunc(lname,'Last Name cannot be empty');
     }else{
-        successFunc(lname)
+        successFunc(lname);
     }
     if(emailvalue === ''){
-        errorFunc(email,'email cannot be empty')
+        errorFunc(email,'email cannot be empty');
     }else if(!emailvalue.match(pattern)){
-        errorFunc(email,'You have entered an invalid email address!')
+        errorFunc(email,'You have entered an invalid email address!');
     }
     
     else{
-        successFunc(email)
+        successFunc(email);
     }
     if(passw === ''){
-        errorFunc(pass,'Password cannot be empty')
+        errorFunc(pass,'Password cannot be empty');
     }else{
-        successFunc(pass)
+        successFunc(pass);
     }
-})
+});
 
 function errorFunc(req, message){
     const formControl = req.parentElement;
-    const span = formControl.querySelector('span')
-    span.innerText = message
-    req.className +='error'
-    span.className += 'error-text'
+    const span = formControl.querySelector('span');
+    span.innerText = message;
+    req.className +='error';
+    span.className += 'error-text';
 }
 function successFunc(req){
-    req.className = 'Success'
+    req.className = 'Success';
 }
