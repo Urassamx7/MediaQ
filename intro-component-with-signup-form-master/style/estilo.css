@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 400 15px 'Poppins', sans-serif;
+}
+:root{
+    /*Background*/
+    --Red: hsl(0, 100%, 74%) ;
+    --Green: hsl(154, 59%, 51%);
+
+    /*Accent*/ 
+    --Blue: hsl(248, 32%, 49%);
+
+    /*Neutral*/
+    --Dark-Blue: hsl(249, 10%, 26%) ;
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+html, body{
+    min-width:95vw;
+    min-height: 95vh;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/bg-intro-mobile.png);
+    background-color: var(--Red);
+    margin: 40px 0px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.ux, .prize{
+    width: 95%;
+margin: 20px;
+}
+.prize{
+    width: 90vw;
+    background: var(--Blue);
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 6px 10px var(--Dark-Blue);
+}
+.prize span{
+    font-weight: 600;
+}
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    width: 90vw;
+    padding: 12px;
+    box-shadow: 5px 5px 10px var(--Dark-Blue);
+    margin-left: 20px;
+}
+.subscribe p {
+    color: var(--Grayish-Blue);
+    text-align: center;
+}
+.subscribe .data{
+width: 95%;
+margin:10px;
+}
+form input{
+    padding: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.123);
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 600;
+}
+.button{
+    text-transform: uppercase;
+    background: var(--Green);
+    color: white;
+    letter-spacing: 1.5px;
+    box-shadow: 0.5px 1px 3px var(--Dark-Blue);
+    cursor: pointer;
+    font-weight: 700;
+}
+.last{
+    font-size: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.last > span.term{
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--Red);
+}
+
+.error {
+    border: 2px solid hsl(0, 100%, 74%);
+    background: url(../images/icon-error.svg) no-repeat;
+    background-position: 95% 50%;
+}
+.error-text{
+    font-size: 12px;
+    font-style: italic;
+    margin-left: auto;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    color: hsl(0, 100%, 74%);
+}
+.success{
+    border: 2px solid hsl(154, 59%, 51%);
+}
+.attribution { font-size: 11px; text-align: center; 
+padding-top: 10px;}
+.attribution a { color:white;
+text-decoration: none;
+font-size: 11px; }
+@media only screen and (min-width:768px){
+body{
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url(../images/bg-intro-desktop.png);
+}
+h1{
+    font-size: 2rem;
+}
+.subscribe{
+    max-width: 500px; 
+    min-height: 400px;  
+    margin: 0; 
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.prize{
+    max-width: 500px;
+   margin-left: 0;
+}
+.start{
+    max-width: 500px;
+}
+.start p{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+footer{
+    display: none;
+}
+}
