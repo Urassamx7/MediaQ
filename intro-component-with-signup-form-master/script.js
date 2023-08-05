@@ -2,7 +2,7 @@ const tname = document.getElementById('fname');
 const lname = document.getElementById('flname');
 const email = document.getElementById('ema');
 const pass = document.getElementById('pass');
-const forma = document.getElementById('form');
+const forma = document.getElementById('button');
 
 forma.addEventListener('click', (event)=>{
     event.preventDefault();
@@ -42,10 +42,11 @@ forma.addEventListener('click', (event)=>{
 function errorFunc(req, message){
     const formControl = req.parentElement;
     const span = formControl.querySelector('span');
-    span.innerText = message;
+    span.innerHTML = message;
     req.className +='error';
     span.className += 'error-text';
 }
 function successFunc(req){
     req.className = 'Success';
+
 }
