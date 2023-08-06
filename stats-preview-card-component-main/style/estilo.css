@@ -103,7 +103,13 @@ body{
 .img,.gen{
 min-width: 50%;
 }
+.gen{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 .img{
+
     background: url(../images/image-header-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,7 +121,7 @@ min-width: 50%;
     justify-content: space-around;
 }
 .letter, .decision{
-    margin: auto;
+    margin: 5px;
 }
 .letter{
     margin-top: 20px;
@@ -125,6 +131,8 @@ min-width: 50%;
     text-align: center;
     font-size: 0.5rem;
 }
+
+
 }
 
 .attribution { font-size: 11px; 
