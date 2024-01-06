@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+:root{
+    box-sizing: border-box;
+    /*Primary*/
+    --Yellow: hsl(47, 88%, 63%);
+    
+    /*Neutral*/
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    
+    /*Typografy*/
+    --pragraphfont: 16px;
+    font-family: 'Figtree', sans-serif;
+
+    margin:0;
+}
+
+body,html{
+    max-width: 100vw;
+    height: 100vh;
+}
+body{
+    background: var(--Yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+ min-width: 340px;
+ max-width: 500px;
+ min-height: 70vh;
+ max-height: 80vh;
+ border-radius: 20px;
+ border: 0.3px solid black;
+ border-right: 7px solid black;
+ border-bottom: 7px solid black;
+}
+
+div.container > div.imageContent{
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    height: 40%;
+    border-radius: 10px;
+}
+
+img#jj{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+div.content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+span#learnPart{
+    background-color: var(--Yellow);
+    width: 30%;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: 800;
+    padding: 3px
+}
+span#dataInfo{
+    padding:12px 10px 0px 0px;
+}
+h1{
+    font-size: 1.4rem;
+    margin-bottom: 4.5px;
+}
+
+h1:hover{
+    color: var(--Yellow);
+    cursor: pointer;
+}
+p#typografy{
+    margin-top: -0.5px;
+   color: var(--Grey);
+
+}
+div.player{
+
+    writing-mode: nowrap;
+    display: flex;
+}
+div.player>img{
+    height: 30px;
+    width: 30px;
+}
+div.player > span{
+    padding-left: 10px;
+    padding-top: 5px;
+    font-weight: 800;
+}
+.attribution{
+    text-align: center;
+}
+.attribution > a{
+    color: var(--White);
+}
+
+@media (min-width: 376px) {
+    div.container > div.imageContent{
+        margin: auto;
+        margin-top: 20px;
+        width: 90%;
+        height: 90%;
+        border-radius: 20px;
+    }
+    img#jj{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    div.content{
+        padding-left: 30px;
+    }
+
+  }

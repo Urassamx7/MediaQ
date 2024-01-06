@@ -135,6 +135,12 @@ min-width: 50%;
 
 }
 
+span.values{
+letter-spacing: normal;
+}
+.up{
+    text-transform: lowercase;
+}
 .attribution { font-size: 11px; 
     text-align: center;
     font-weight: 400;
