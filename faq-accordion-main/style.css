@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+:root{    
+--White: hsl(0, 0%, 100%);
+--Light_pink: hsl(275, 100%, 97%);
+--Grayish_purple: hsl(292, 16%, 49%);
+--Dark_purple: hsl(292, 42%, 14%);
+ font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+body,html{
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Light_pink);
+}
+body{
+    background-image: url('assets/images/background-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: var(--Light_pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: var(--White);
+   min-height: 40vh;
+   width: 80vw;
+   margin: auto;
+   display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.faq-header{
+font-weight: 700;
+font-size: 2rem;
+margin: 10px;
+display: flex;
+}
+
+.toggle img {
+    transition: transform 0.3s ease; 
+  }
+
+
+#dataHidden,
+#fmfreeHidden,
+#projectHidden,
+#challengeHidden{
+    font-weight: 400;
+    color: var( --Grayish_purple);
+    font-size: 14;
+    display: none;
+   margin: 0px 10px 0px 10px;
+}
+
+.faq-item{  font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px
+}
+.attribution{
+    text-align: center;
+    font-weight: 600;
+}
+.attribution > a{
+    color: yellowgreen ;
+    text-decoration: none;
+}
