@@ -71,7 +71,7 @@ display: flex;
     font-weight: 600;
 }
 .attribution > a{
-    color: yellowgreen ;
+    color: var(--Grayish_purple) ;
     text-decoration: none;
 }
 
