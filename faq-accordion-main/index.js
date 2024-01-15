@@ -4,10 +4,11 @@ function toggleVisibility(elementId) {
   
     if (element.style.display === 'none') {
       element.style.display = 'block';
-      toggleSpan.src = 'assets/images/icon-minus.svg'; // Substitua pelo caminho real do ícone minus
+      toggleSpan.src = 'assets/images/icon-minus.svg'; 
     } else {
       element.style.display = 'none';
-      toggleSpan.src = 'assets/images/icon-plus.svg'; // Substitua pelo caminho real do ícone plus
+      toggleSpan.src = 'assets/images/icon-plus.svg'; 
     }
   }
   
+  /*Marvin ;) */
