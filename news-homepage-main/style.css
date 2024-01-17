@@ -69,12 +69,8 @@ body{
 .header-content .header-option .menu-field button {
     border: none;
 }
-.menu-field div{
-    display: none;
-}
 .puzzle-img{
-    width: auto;
-    
+    width: auto;  
 }
 
 .puzzle-img img{
@@ -181,17 +177,93 @@ body{
     display: none;
 }
 
-@media (min-width:577px) {
+
+.attribution { 
+    font-size: 1rem; 
+    text-align: center; 
+    font-weight: 700;   
+}
+.attribution a { 
+    color: var(--Grayish_blue);
+    text-decoration: none; }
+    .attribution a:hover {
+        color: var(--Soft_red);
+    }
+.menu-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-field {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    max-width: 300px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .close-btn{
+    align-self: flex-end;
+  }
+  
+  .menu-icon,
+  .close-btn {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .menu-icon:hover,
+  .close-btn:hover {
+    color: var(--Soft_red);
+  }
+  
+  .menu-field div {
+    display: flex;
+    flex-direction: column;
+   padding: 10px;
+    border: 0.5px solid rgb(75, 72, 72);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-field a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 1.1rem;
+
+  }
+  .alternative-sorry{
+    display: none;
+  }
+  @media (min-width: 577px) {
+    
+    .menu-icon,
+    .close-btn {
+      display: none;
+    }
+    
     .header-content .header-option{
         justify-content: space-between;
         align-items: center;
 
-        .menu-field{
+        .alternative-sorry{
             display: flex;
+            justify-self: flex-end;
             justify-content: space-around;
             width: 40%;
         }
-        .menu-field a{
+        .alternative-sorry a{
             text-decoration: none;
             color: black;
             font-size: 1.1rem;
@@ -232,9 +304,6 @@ body{
     .header-option button{
         display: none;
     }
-    .header-option .menu-field div{
-        display: inline-block;
-    }
     .header-content{
         width: 100%;
         height: 50px;
@@ -246,15 +315,4 @@ body{
         color: var(--Soft_red);
         cursor: pointer;
     }
-}
-.attribution { 
-    font-size: 1rem; 
-    text-align: center; 
-    font-weight: 700;   
-}
-.attribution a { 
-    color: var(--Grayish_blue);
-    text-decoration: none; }
-    .attribution a:hover {
-        color: var(--Soft_red);
-    }
+} 
