@@ -1,7 +1,3 @@
-// Adicione estas modificações ao seu JavaScript
-
-/* ... Seu código JavaScript existente ... */
-
 document.addEventListener('DOMContentLoaded', function () {
   const menuIcon = document.querySelector('.menu-icon');
   const closeBtn = document.querySelector('.close-btn');
